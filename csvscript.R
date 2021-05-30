@@ -1,0 +1,1 @@
+dat <- read.csv("plantesexcursio.csv", sep=";", stringsAsFactors=TRUE)
