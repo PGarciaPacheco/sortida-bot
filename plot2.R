@@ -1,0 +1,6 @@
+dat <- read.csv("plantesexcursio.csv", sep=";", stringsAsFactors=TRUE)
+esp <- as.character(dat$ESPÈCIE)
+esp2 <- factor(esp)
+par(mar=c(5,10,5,2))
+plot(dat$DISTÀNCIA.AL.CAMÍ ~ esp2, main= "Espècies segons la distància al camí", horizontal=TRUE, xlab= "", ylab= "Distància al camí", frame.plot= FALSE, las=1, col=c(2,3,4,5,6,7,8,9,10))
+mtext("Espècie", side=2, line=9) 
